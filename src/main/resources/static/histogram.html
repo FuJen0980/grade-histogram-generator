@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram Generator</title>
+    <link rel="stylesheet" href="./histogram.css">
+    <script src = "./calculate.js" defer></script>
+</head>
+<body>
+    <header class = "pageTitle">
+        Histogram Generator<br><br>
+    </header>
+    <main id ="mainpart">
+        <div class = "container">
+            <div class = "left-div" id = "lowerBound">
+                <table id = "gradeTable">
+                    <legend>Lower bounds</legend>
+                    <tr><td class = "tableX">Max</td>
+                        <td>
+                            <form>
+                            <input name ="gradeBoundary", type ="number" class ="boundaryInputBox">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr><td class = "tableX">A+</td>
+                        <td>
+                            <form>
+                            <input name ="gradeBoundary", type ="number" class ="boundaryInputBox">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr><td class = "tableX">A</td>
+                        <td>
+                            <form>
+                            <input name ="gradeBoundary", type ="number" class ="boundaryInputBox">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr><td class = "tableX">A-</td>
+                        <td>
+                            <form>
+                            <input name ="gradeBoundary", type ="number" class ="boundaryInputBox">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr><td class = "tableX">B+</td>
+                        <td>
+                            <form>
+                            <input name ="gradeBoundary", type ="number" class ="boundaryInputBox">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr><td class = "tableX">B</td>
+                        <td>
+                            <form>
+                            <input name ="gradeBoundary", type ="number" class ="boundaryInputBox">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr><td class = "tableX">B-</td>
+                        <td>
+                            <form>
+                            <input name ="gradeBoundary", type ="number" class ="boundaryInputBox">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr><td class = "tableX">C+</td>
+                        <td>
+                            <form>
+                            <input name ="gradeBoundary", type ="number" class ="boundaryInputBox">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr><td class = "tableX">C</td>
+                        <td>
+                            <form>
+                            <input name ="gradeBoundary", type ="number" class ="boundaryInputBox">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr><td class = "tableX">C-</td>
+                        <td>
+                            <form>
+                            <input name ="gradeBoundary", type ="number" class ="boundaryInputBox">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr><td class = "tableX">D</td>
+                        <td>
+                            <form>
+                            <input name ="gradeBoundary", type ="number" class ="boundaryInputBox">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr><td class = "tableX">F</td>
+                        <td>
+                            <form>
+                            <input name ="gradeBoundary", type ="number" class ="boundaryInputBox">
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class = right-div>
+                <div class = "right-top" id = "histogram">
+                    <table id = "histogramTable">
+                        <legend>Histogram</legend>
+                        <tr>
+                            <td class = "HistogramTableX">A+</td>
+                            <td class = "histogram-container"> 
+                                <div class = "progressBar" id = "Aplus-count">0</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "HistogramTableX">A</td>
+                            <td class = "histogram-container"> 
+                                <div class = "progressBar" id = "A-count">0</div>
+                            </td>
+                        </tr>
+                        <tr><td class = "HistogramTableX">A-</td>
+                            <td class = "histogram-container"> 
+                                <div class = "progressBar" id = "Aminus-count">0</div>
+                            </td>
+                        </tr>
+                        <tr><td class = "HistogramTableX">B+</td>
+                            <td class = "histogram-container"> 
+                                <div class = "progressBar" id = "Bplus-count">0</div>
+                            </td>
+                        </tr>
+                        <tr><td class = "HistogramTableX">B</td>
+                            <td class = "histogram-container"> 
+                                <div class = "progressBar" id = "B-count">0</div>
+                            </td>
+                        </tr>
+                        <tr><td class = "HistogramTableX">B-</td>
+                            <td class = "histogram-container"> 
+                                <div class = "progressBar" id = "Bminus-count">0</div>
+                            </td>
+                        </tr>
+                        <tr><td class = "HistogramTableX">C+</td>
+                            <td class = "histogram-container"> 
+                                <div class = "progressBar" id = "Cplus-count">0</div>
+                            </td>
+                        </tr>
+                        <tr><td class = "HistogramTableX">C</td>
+                            <td class = "histogram-container"> 
+                                <div class = "progressBar" id = "C-count">0</div>
+                            </td>
+                        </tr>
+                        <tr><td class = "HistogramTableX">C-</td>
+                            <td class = "histogram-container"> 
+                                <div class = "progressBar" id = "Cminus-count">0</div>
+                            </td>
+                        </tr>
+                        <tr><td class = "HistogramTableX">D</td>
+                            <td class = "histogram-container"> 
+                                <div class = "progressBar" id = "D-count">0</div>
+                            </td>
+                        </tr>   
+                        <tr><td class = "HistogramTableX">F</td>
+                            <td class = "histogram-container"> 
+                                <div class = "progressBar" id = "F-count">0</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class = "right-bottom" id = "addNewGrade">
+                    <form action="/submit" class = "newGrade">
+                        New Grade: <input name = "newGrade" type="number" id = "newGrade">
+                        <button class = "button">Add Grade</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

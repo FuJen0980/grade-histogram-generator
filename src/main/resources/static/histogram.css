@@ -1,0 +1,213 @@
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+legend {
+    font-weight: bold;
+    font-size: large;
+    color: #b64d53;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-div {
+    flex: 1;
+}
+
+.right-div {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-top {
+    flex: 1;
+}
+
+.right-bottom {
+    flex: 1;
+}
+
+@media(max-width: 768px) {
+    .left-div, .right-div {
+        flex: 0 0 100%;
+    }
+}
+
+#lowerBound {
+    background-color: #e9eef1;
+    border: 5px solid white;
+}
+
+#histogram {
+    background-color: #e9eef1;
+    border: 5px solid white;
+
+}
+
+#addNewGrade {
+    background-color: #e9eef1;
+    border: 5px solid white;
+
+}
+
+#gradeTable {
+    border-spacing: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+.tableX {
+    font-size: medium;
+    padding-right: 20vh;
+}
+
+.boundaryInputBox{
+    width: 40%;
+    padding-bottom: 3px;
+}
+
+#histogramTable {
+    border-spacing: 8px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 18px;
+}
+
+.HistogramTableX {
+    font-size: small;
+}
+
+.newGrade {
+    padding-top: 10px;
+    font-size: medium;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.button {
+    padding: 5px 5px;
+    background-color: #e9eef1;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button:hover{
+    color: #b64d53;
+    background-color: lightgrey;
+}
+
+.histogram-container {
+    /* background-color: white; */
+    border-radius:5px;
+    width:100%;
+}
+
+#Aplus-count {
+    text-align: right;
+    background-color: #b64d53;
+    width: 0%;
+    border-radius:5px;
+    padding-right: 13px;
+    color: white; 
+}
+
+#A-count {
+    text-align: right;
+    background-color: #b64d53;
+    width: 0%;
+    border-radius:5px;
+    padding-right: 13px;
+    color: white; 
+}
+
+#Aminus-count {
+    text-align: right;
+    background-color: #b64d53;
+    width: 0%;
+    border-radius:5px;
+    padding-right: 13px;
+    color: white; 
+}
+
+#Bplus-count {
+    text-align: right;
+    background-color: #b64d53;
+    width: 0%;
+    border-radius:5px;
+    padding-right: 13px;
+    color: white; 
+}
+
+#B-count {
+    text-align: right;
+    background-color: #b64d53;
+    width: 0%;
+    border-radius:5px;
+    padding-right: 13px;
+    color: white; 
+}
+
+#Bminus-count {
+    text-align: right;
+    background-color: #b64d53;
+    width: 0%;
+    border-radius:5px;
+    padding-right: 13px;
+    color: white; 
+}
+
+#Cplus-count {
+    text-align: right;
+    background-color: #b64d53;
+    width: 0%;
+    border-radius:5px;
+    padding-right: 13px;
+    color: white; 
+}
+
+#C-count {
+    text-align: right;
+    background-color: #b64d53;
+    width: 0%;
+    border-radius:5px;
+    padding-right: 13px;
+    color: white; 
+}
+
+#Cminus-count {
+    text-align: right;
+    background-color: #b64d53;
+    width: 0%;
+    border-radius:5px;
+    padding-right: 13px;
+    color: white; 
+}
+
+#D-count {
+    text-align: right;
+    background-color: #b64d53;
+    width: 0%;
+    border-radius:5px;
+    padding-right: 13px;
+    color: white; 
+}
+
+#F-count {
+    text-align: right;
+    background-color: #b64d53;
+    width: 0%;
+    border-radius:5px;
+    padding-right: 13px;
+    color: white; 
+}
